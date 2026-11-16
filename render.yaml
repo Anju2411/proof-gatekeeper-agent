@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: proof-gatekeeper-agent
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: AGENT_GAMES_HMAC_SECRET
+        sync: false
